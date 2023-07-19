@@ -10,53 +10,138 @@
   <header>
     <h1>PhysBot</h1>
   </header>
-  
   <main>
+  <!-- caruusel -->
+ 
+  <div id="carouselExample" class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="Physbot8.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="physbot2.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="physbot3.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot4.png" alt="Physbot">
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="Physbot5.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot6.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot7.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot1.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <div class="container">
+          <img src="Physbot9.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot10.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot11.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot12.png" alt="Physbot">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <img src="Physbot13.png" alt="Physbot">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-control carousel-control-prev" onclick="carouselSlide(-1)">
+      &#10094;
+    </div>
+    <div class="carousel-control carousel-control-next" onclick="carouselSlide(1)">
+      &#10095;
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlide(slideIndex);
+
+    function carouselSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+      var slides = document.getElementsByClassName("carousel-item");
+      
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  </script>
+
+  <!-- caruusel -->
+ 
     <section id="interactive-lessons">
       <div class="container">
         <h3>Ի՞նչ է PhysBot</h3>
         <p>Physbot-ը  ռոբոտ է, որը նախատեսված է  9-16 տարեկան երեխաների, դպրոցների և ֆիզիկայով հետաքրքրված անձանց համար։ Դասասենյակների՝  շատ հաճախ չտրամադրող միջավայրի պատճառով աշակերտները ամբողջությամբ չեն ներգրավվում դասապրոցեսին՝ հատկապես, երբ խոսքը վերաբերում է այնպիսի դժվար առարկայի, ինչպիսին ֆիզիկան է։ Physbot-ը այս խնդրի ամենաճիշտ լուծումն է։ Ռոբոտը կդառնա ցանկացածիս ամենամոտ ընկերը, ով ֆիզիկայով հետաքրքրված է՝ ցուցադրելով փոքրիկ անիմացիաներ, յուրաքանչյուրի համար ստեղծելով իր անհատական ուղին, բերելով օրինակներ և վերջի վերջո, օգտագործելով խոսելու ունակությունը, մեր ռոբոտը ֆիզիկայի դասերը կներկայացնի հակիճ, և, որ ամենակարևորն է՝ մատչելի ձևով։</p>
-        <img src="Physbot.png" alt="Interactive Lessons">
+        <img src="physbot.png" alt="Physbot">
       </div>
     </section>
     
     <section id="personalized-learning">
       <div class="container">
         <h3>Ո՞րն է գաղափարի հիմնական նպատակը։ Ի՞նչ խնդիրներ կլուծի այն։</h3>
-        <p>Physbot-ը նպատակ ունի երեխաների մոտ ֆիզիկայի հանդեպ հետաքրքրություն առաջացնել, ֆիզիկան ներկայացնել ավելի պարզ և մատչելի։ Այն  ֆիզիկան ներկայացնելու է ոչ ստանդարտ մեթոդներով , այդպիսով  հետաքրքրություն առաջացնելով ֆիզիկայի հանդեպ։Այն կարողանալու է յուրաքանչյու երեխայի համար կազմել անհատական պլան և ուսուցումն շարունակել ըստ այդ պլանի։ Ռոբոտն ունենալու է նաև կայքէջ  որտեղ երեխաններն կարող են տալ իրենց բոլոր անհասկանլի հարցերն։ Ռոբոտն ամեն ինչ բացատրելու է հստակ և հակիրճ, բայց միևնույն ժամանակ  մաքսիմալ մատչելի ու հասկանալի։</p>
-        <img src="Physbot12.png" alt="Personalized Learning">
+        <p>Physbot-ը նպատակ ունի երեխաների մոտ ֆիզիկայի հանդեպ հետաքրքրություն առաջացնել, ֆիզիկան ներկայացնել ավելի պարզ և մատչելի։ Այն ֆիզիկայի դասերը ներկայացնելու է ոչ ստանդարտ եղանակներով, այդպիսով  հետաքրքրություն առաջացնելով ֆիզիկայի հանդեպ։Այն կարողանալու է յուրաքանչյու երեխայի համար կազմել անհատական պլան և ուսուցումն շարունակել ըստ այդ պլանի։ Ռոբոտն ունենալու է նաև կայքէջ  որտեղ երեխաններն կարող են տալ իրենց բոլոր անհասկանլի հարցերն։ Ռոբոտն ամեն ինչ բացատրելու է հստակ և հակիրճ, բայց միևնույն ժամանակ  մաքսիմալ մատչելի ու հասկանալի։</p>
+        <img src="physbot12.png" alt="Physbot">
       </div>
     </section>
     
     <section id="problem-solving">
       <div class="container">
-        <h3>Ինչ կարող է անել ռոբոտը։</h3>
-        <p></p>
-        <img src="Physbot10.png" alt="Problem-Solving Assistance">
-      </div>
-    </section>
-    
-    <section id="teacher-collaboration">
-      <div class="container">
-        <h3>Teacher Collaboration</h3>
-        <p>PhysBot collaborates with teachers to create an engaging and visually appealing learning environment. The robot's charming visuals and interactive features captivate students' attention.</p>
-        <img src="physbot.png" alt="Teacher Collaboration">
-      </div>
-    </section>
-    
-    <section id="inclusive-learning">
-      <div class="container">
-        <h3>Inclusive Learning Environment</h3>
-        <p>PhysBot fosters inclusivity with its vibrant and welcoming design. The website provides a user-friendly interface where children can explore physics in a supportive and interactive way.</p>
-        <img src="physbot.png" alt="Inclusive Learning Environment">
-      </div>
-    </section>
-    
-    <section id="inspiring-future-innovators">
-      <div class="container">
-        <h3>Inspiring Future Innovators</h3>
-        <p>PhysBot inspires future innovators through its adorable visuals and captivating content. The robot motivates children to explore the wonders of physics and pursue scientific discovery.</p>
-        <img src="physbot.png" alt="Inspiring Future Innovators">
+        <h3>Ինչպես առաջացավ Physbot-ի գաղափարը։</h3>
+        <p> «Ես» կրթական հիմնադրամի հերթական առաջադրանքներից մեկը մեր սեփական ռոբոտը ստեղծելն էր, գաղափարները շատ էին բայց դրանցից պետք է ընտրեի միայն մեկը։ Այդ ժամանակ արդեն ունեի Ֆիզիկ ծրագիրը ու ակտիվ թարմացնում էի, ես որոշեցի այդ երկուսը միավորել և մտքումս ծագեց Physbot-ի գաղափարը։ Սակայն «Ես» կրթական հիմնադրամում ռոբոտը հավաքել չստացվեց շրջափակման պատճառով, բայց չհուսահատվեցի իմացա Artsakh STEm expo-ի մասին ու միանգամից դիմեցի։ </p>
+        <img src="Physbot10.png" alt="Physbot">
       </div>
     </section>
   </main>
